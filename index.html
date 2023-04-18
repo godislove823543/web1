@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>黑鵝麵包店</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            background-color: #6C6024;
+        }
+
+        header {
+            /*文字位置*/
+            position: relative;
+        }
+
+        header h1 {
+            /*圖片*/
+            background-image: url(./asset/banner_bg.png);
+            background-repeat: no-repeat;
+            /*預設是repeat 重疊一張圖*/
+            background-position: left;
+            background-size: cover;
+            height: 240px;
+
+        }
+
+        header em {
+            /*文字*/
+            color: #D7B98E;
+            position: absolute;
+            /**/
+            right: 3em;
+            top: 1em;
+            letter-spacing: .3em;
+            /*字距*/
+
+
+        }
+
+        main {
+
+            margin: 0 10%;
+            /*上下0 左右個縮小10% 置中*/
+
+
+        }
+
+        /*偽元素 阻擋float 在main之後*/
+        main::after {
+            content: " ";
+            /*沒有這行就不能執行*/
+            display: block;
+            /*將這行文字視為一個區塊*/
+            clear: both;
+            /*属性指定一个元素是否必须移动(清除浮动后) 到在它之前的浮动元素下面*/
+
+        }
+
+        main section {
+            color: #ffffff50; /*文字顏色*/
+            line-height: 1.5em; /**/
+            /*後代選取器  文字*/
+            background-color: rgba(230, 160, 144, 0.1);
+            /*最後一個 不透明度*/
+            float: left;
+            box-sizing: border-box;
+            width: 33%;
+            /*3個欄位*/
+            height: 600px;
+            padding: 1em;
+
+
+
+        }
+        main section h3{
+            color:#B68E55;
+            font-weight: bold;
+            font-family:Microsoft JhengHei;
+        }
+        main section div{ /*把文字置中*/
+            text-align: center; 
+        }
+     
+
+        footer {
+            text-align: center;
+            margin-top: 2em;
+            /*離頂3em*/
+            font-size: small;
+            color: #ffffff50;
+            /*不透明度 最後的50*/
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <h1><em>莎士比亞經典故事集</em></h1>
+    </header>
+    <main>
+        <section id="left">
+            <div><img src="./asset/沙士.jpg" alt="莎士比亞" width="150" height="100"></div>
+            <h3>第一卷（浪漫喜劇卷一）</h3>
+
+            <p>莎士比亞的生平 一個輪廓 方平
+            莎士比亞時代的舞台和觀眾 方平
+            錯盡錯絕（The Comedy of Errors） 方平 譯
+            馴悍記（The Taming of the Shrew） 方平 譯
+            維羅納二紳士（The Two Gentlemen of Verona） 阮 譯
+            愛的徒勞（Love』s Labour』s Lost） 方平 譯</p>
+                </section>
+        <section id="center">
+            <div><img src="./asset/仲.jpg" alt="仲夏夜之夢" width="150"height="100"></div>
+            <h3>第二卷（浪漫喜劇卷二）</h3>
+            
+            仲夏夜之夢（A Midsummer Night』s Dream） 方平 譯
+            捕風捉影（Much Ado About Nothing） 方平 譯
+            溫莎的風流娘兒們（The Merry Wives of Windsor） 方平 譯
+            第十二夜（Twelfth Night；or, What You Will） 方平 譯
+        </section>
+        <section id="right">
+            <div><img src="./asset/威威.jpg" alt="威尼斯商人" width="150"height="100"></div>
+            <h3>第三卷（問題/黑色喜劇卷）</h3>
+            
+            威尼斯商人（The Merchant of Venice） 方平 譯
+            皆大歡喜（As You Like It） 方平 譯
+            特洛伊羅斯與克瑞西達（Troilus and Cressida） 阮 譯
+            結局好萬事好（All』s Well That Ends Well） 阮 譯
+            自作自受（Measure for Measure） 方平 譯
+        </section>
+
+
+    </main>
+    <script src="" async defer></script>
+    <footer>
+        所有內容版權&copy;2013,黑鵝小酒館。 <!--搜尋html copyright-->
+    </footer>
+</body>
+
+</html>
